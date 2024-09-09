@@ -5,6 +5,8 @@ Audiofiletest is collection of scripts to verify integrity of FLAC and Wavpack a
 
 FLAC and Wavpack files are tested separately by **flactest.sh** and **wavpacktest.sh**
 
+Both scripts can be run parallel. Each script checks on which CPU core it runs and fixes sub-processes onto same core.
+
 ### Requirements
 
 - FLAC - https://xiph.org/flac/
@@ -14,7 +16,8 @@ Audiofiletest scripts were tested on **BASH** and **DASH** shells.
 
 ### Installation
 
-- Save **flactest.sh** and **wavpacktest.sh** to some convinient location.
+- Clone this repo to some convinient location on Your computer.
+- If needed, move **flactest.sh** and **wavpacktest.sh** to some convinient location.
 - Run **chmod u+x** for both scripts to make them executable.
 
 ### Usage
@@ -29,7 +32,6 @@ Both scripts take directory containing FLAC or Wavpack files as argument. For ex
 
 Testing scripts need only **read** access to directory containing sound files. LOG files are created to current working directory. If LOG file can't be created, error is shown and script exits
 without testing.
-
 
 ### Copyright
 

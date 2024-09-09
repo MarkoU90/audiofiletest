@@ -1,3 +1,8 @@
-V - 27082024
+V - 09092024
+* Change log-file name time format from Hour-Minute-DayMonthYear to DayMonthYear-Hour-Minute.
+* Refactor information displaying function.
+* General code refactoring.
+* At startup CPU core number is checked and fixed for main program and file testing sub-processes.
 
+V - 27082024
 * Initial public release.
